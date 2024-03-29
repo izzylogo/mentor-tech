@@ -61,7 +61,7 @@ const page = () => {
                 </RadioGroup>
             </div>
 
-            <div>
+            <div className='my-6'>
                 <div className='block w-full'>
                     <FormControl variant="standard" sx={{ m: 1, minWidth: 120, width: "95%" }}>
                         <InputLabel id="demo-simple-select-standard-label">SELECT LANGUAGE</InputLabel>
