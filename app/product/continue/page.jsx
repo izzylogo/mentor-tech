@@ -64,24 +64,6 @@ const page = () => {
             <div>
                 <div className='block w-full'>
                     <FormControl variant="standard" sx={{ m: 1, minWidth: 120, width: "95%" }}>
-                        <InputLabel id="demo-simple-select-standard-label uppercase">available time</InputLabel>
-                        <Select
-                            labelId="demo-simple-select-standard-label"
-                            id="demo-simple-select-standard"
-                            value={time}
-                            onChange={handleTime}
-                            label="Age"
-                            className='w-full'
-                        >
-                        <MenuItem value="English">17:00 PM</MenuItem>
-                        <MenuItem value="French">19:00 PM</MenuItem>
-                        <MenuItem value="Latina">20:00 PM</MenuItem>
-                        {/* <MenuItem value="">Thirty</MenuItem> */}
-                        </Select>
-                    </FormControl>
-                </div>
-                <div className='block w-full'>
-                    <FormControl variant="standard" sx={{ m: 1, minWidth: 120, width: "95%" }}>
                         <InputLabel id="demo-simple-select-standard-label">SELECT LANGUAGE</InputLabel>
                         <Select
                             labelId="demo-simple-select-standard-label"
@@ -94,6 +76,24 @@ const page = () => {
                         <MenuItem value="English">English</MenuItem>
                         <MenuItem value="French">French</MenuItem>
                         <MenuItem value="Latina">Latina</MenuItem>
+                        {/* <MenuItem value="">Thirty</MenuItem> */}
+                        </Select>
+                    </FormControl>
+                </div>
+                <div className='block w-full'>
+                    <FormControl variant="standard" sx={{ m: 1, minWidth: 120, width: "95%" }}>
+                        <InputLabel id="demo-simple-select-standard-label uppercase">AVAILABLE TIME</InputLabel>
+                        <Select
+                            labelId="demo-simple-select-standard-label"
+                            id="demo-simple-select-standard"
+                            value={time}
+                            onChange={handleTime}
+                            label="Time"
+                            className='w-full'
+                        >
+                        <MenuItem value="17:00">17:00 PM</MenuItem>
+                        <MenuItem value="19:00">19:00 PM</MenuItem>
+                        <MenuItem value="20:00">20:00 PM</MenuItem>
                         {/* <MenuItem value="">Thirty</MenuItem> */}
                         </Select>
                     </FormControl>
