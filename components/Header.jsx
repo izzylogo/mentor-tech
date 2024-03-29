@@ -12,8 +12,8 @@ const Header = () => {
   const pathNames = pathname.split("/").filter((path) => path);
 
   return (
-    <nav>
-      <div className='flex items-center justify-between shadow-md shadow-slate-300 py-4 px-6'>
+    <nav className='mb-16'>
+      <div className='flex fixed w-full bg-white top-0 left-0 h-[60px] z-10 items-center justify-between shadow-md shadow-slate-300 py-4 px-6'>
         <div className='flex items-center gap-2'>
           <MobileMenuIconLight className="w-24 h-24"/>
           {/* <p className='capitalize text-lg'>{pathNames} <span className='font-semibold'>/</span></p> */}
