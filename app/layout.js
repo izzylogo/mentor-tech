@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +12,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="max-[780px]:hidden flex items-center justify-center w-full h-[100vh]">This application can only be viewed on a mobile device.</div>
+        <main className="min-[780px]:hidden min-h-screen relative  mx-auto  w-full overflow-hidden bg-body-light dark:bg-body-dark">
+          <div className="w-full max-w-[1440px] mx-auto h-auto">
+            <Header/>
+            {children}
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
